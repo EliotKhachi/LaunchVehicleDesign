@@ -1,0 +1,9 @@
+Generating Mass Moments Table...
+Traceback (most recent call last)
+  File CDevPythonLaunchVehicleDesignMainLVDesign.py, line 170, in module
+    LV.massMoments(loads_conditions[1]) # wind loads
+  File CDevPythonLaunchVehicleDesignLaunchVehicle.py, line 125, in massMoments
+    self.initMasses(self.df, payload_items, step_items_liquid, step_items_solid, load_type)
+  File CDevPythonLaunchVehicleDesignLaunchVehicle.py, line 368, in initMasses
+    df['Mass (kg)'][row + l_items.index(Fuel)] = df['Mass (kg)'][row + l_items.index(Fuel)] - df_maxq.iloc[0,4]step.fuel_frac
+UnboundLocalError local variable 'df_maxq' referenced before assignment
